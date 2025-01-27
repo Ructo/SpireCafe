@@ -44,6 +44,7 @@ import spireCafe.interactables.patrons.powerelic.implementation.debug.Devcommand
 import spireCafe.interactables.patrons.spiomesmanifestation.SpiomesManifestationPatron;
 import spireCafe.patches.PotencySaverPatch;
 import spireCafe.screens.CafeMerchantScreen;
+import spireCafe.screens.GremlinSideshowScreen;
 import spireCafe.screens.JukeboxScreen;
 import spireCafe.ui.Dialog;
 import spireCafe.ui.FixedModLabeledToggleButton.FixedModLabeledToggleButton;
@@ -265,6 +266,7 @@ public class Anniv7Mod implements
         BaseMod.addEvent(CafeRoom.ID, CafeRoom.class, "CafeDungeon");
         BaseMod.addCustomScreen(new CafeMerchantScreen());
         BaseMod.addCustomScreen(new JukeboxScreen());
+        BaseMod.addCustomScreen(new GremlinSideshowScreen());
         ConsoleCommand.addCommand("cafe", Cafe.class);
         ConsoleCommand.addCommand("powerelic", DevcommandPowerelic.class);
     }
